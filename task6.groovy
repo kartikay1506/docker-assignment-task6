@@ -2,7 +2,7 @@ job("kube")
 {
  description ("my first kube job")
 scm {
-github ('vaishnavi1401/devops-site-try','master')
+github ('kartikay1506/docker-assignment-2.git','master')
 }
 configure { it / 'triggers' / 'com.cloudbees.jenkins.GitHubPushTrigger' / 'spec' }
 steps{
@@ -61,7 +61,7 @@ description ("my fifth kube job")
  authenticationToken('mail')
 
  publishers {
-        mailer('vaishnaviaggarwal1401@gmail..com', true, true)
+        mailer('kartikaysawhney150699@gmail..com', true, true)
     }
 triggers {
         upstream('kube2', 'SUCCESS')
